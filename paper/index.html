@@ -6,6 +6,17 @@
 <!-- Define inlined JavaScript -->
 <script type="text/paperscript" canvas="myCanvas">
 	// GRAPHICS
+  var c = view.center;
+  var Radius = 50;
+
+  var points = [
+    new Point(c.x + Radius, c.y+Radius),
+    new Point(c.x - Radius, c.y+Radius),
+    new Point(c.x, c.y-Radius)
+    ];
+
+  var path = new Path(points);
+      path.fillColor = "white";
 </script>
 </head>
 
